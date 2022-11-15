@@ -40,6 +40,9 @@ RSpec.describe BikeClub do
 
       biker2.log_ride(ride2, 65.0)
 
+      bike_club.add_biker(biker)
+      bike_club.add_biker(biker2)
+
       expect(bike_club.biker_with_most_rides).to eq(biker)
     end
   end
