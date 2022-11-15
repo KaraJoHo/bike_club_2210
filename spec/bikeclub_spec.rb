@@ -48,7 +48,7 @@ RSpec.describe BikeClub do
   end
 
   describe 'best_time_for_ride' do
-    it 'can show which biker has the best time for a given ride' do
+    xit 'can show which biker has the best time for a given ride' do
       bike_club = BikeClub.new("The Bike Club")
       biker = Biker.new("Kenny", 30)
       biker2 = Biker.new("Athena", 15)
@@ -73,7 +73,7 @@ RSpec.describe BikeClub do
   end
 
   describe '#eligible_biker' do
-    it 'can show which biker is eligible for a ride based on terrain and max distance' do
+    xit 'can show which biker is eligible for a ride based on terrain and max distance' do
       bike_club = BikeClub.new("The Bike Club")
       biker = Biker.new("Kenny", 30)
       biker2 = Biker.new("Athena", 15)
@@ -92,7 +92,7 @@ RSpec.describe BikeClub do
       bike_club.add_biker(biker)
       bike_club.add_biker(biker2)
 
-      expect(eligible_biker(ride1)).to eq([biker1])
+      expect(bike_club.eligible_biker(ride1)).to eq([biker])
     end
   end
 end
