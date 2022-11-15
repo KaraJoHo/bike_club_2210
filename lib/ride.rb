@@ -7,4 +7,12 @@ class Ride
     @loop = attributes[:loop]
     @terrain = attributes[:terrain]
   end
+
+  def loop?
+    if @loop == true
+      true
+    else
+      false
+    end
+  end
 end
