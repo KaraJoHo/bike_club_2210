@@ -12,7 +12,7 @@ RSpec.describe Ride do
   end
 
   describe '#loop?' do
-    xit 'returns true or false it the ride is a loop' do
+    it 'returns true or false it the ride is a loop' do
       ride1 = Ride.new({name: "Walnut Creek Trail", distance: 10.7, loop: false, terrain: :hills})
 
       expect(ride1.loop?).to eq(false)
