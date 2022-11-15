@@ -35,5 +35,3 @@ RSpec.describe Ride do
     end
   end
 end
-  # expect(ride1.loop?).to eq(false)
-  # expect(ride1.total_distance).to eq(21.4)
